@@ -22,3 +22,5 @@
 #include "entropy_table.hpp"
 #include "scale.hpp"
 #include "imp2mask.hpp"
+#include "CPP.hpp"
+#include "viewport.hpp"

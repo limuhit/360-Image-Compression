@@ -1,0 +1,3 @@
+You can download the decompressed image of Ours(VSSIM) and VVC(Intra) around 0.2bpp at https://pan.baidu.com/s/1M_7vJw1UQ2ydyNUQLs2YTg with the extract code: 1232
+
+A comparision software is provided under the test folder named "p360_viewer.py" which requires the torch package, our lic360 package. Make sure that your compure has a GPU that supports CUDA. You can load our decompressed image and that of VVC in the software and click the start to view the viewport of the two images at the same (lat,lon) position. You can navigate with the keys (asdf) or type the lat and lon in degree in the input space.

@@ -161,4 +161,18 @@ PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
         .def(py::init<int, int, int, bool>())
         .def("to", &imp2mask_opt::to)
         .def("forward", &imp2mask_opt::forward_cuda);
+
+    py::class_<CPP_opt>(m,"CppOp")
+        .def(py::init<bool, int, bool>())
+        .def("to", &CPP_opt::to)
+        .def("forward", &CPP_opt::forward_cuda);
+    
+    py::class_<viewport_opt>(m,"ViewportOp")
+        .def(py::init<float, int, int, int, bool>())
+        .def("to", &viewport_opt::to)
+        .def("forward", &viewport_opt::forward_cuda)
+        .def("backward", &viewport_opt::backward_cuda)
+        .def("cal_rota_matrix",&viewport_opt::cal_rota_matrix)
+        .def("get_viewport_xy", &viewport_opt::get_viewport_xy);
+
 };

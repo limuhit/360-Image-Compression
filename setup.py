@@ -9,7 +9,10 @@ cxx_args = ['-std=c++14', '-DOK']
 nvcc_args = [
 	'-D__CUDA_NO_HALF_OPERATORS__',
     '-gencode', 'arch=compute_60,code=sm_60',
-    '-gencode', 'arch=compute_61,code=sm_61'
+    '-gencode', 'arch=compute_61,code=sm_61',
+    '-gencode', 'arch=compute_75,code=sm_75',
+	'-gencode', 'arch=compute_80,code=sm_80',
+	'-gencode', 'arch=compute_86,code=sm_86'
 ]
 
 setup(
@@ -45,6 +48,8 @@ setup(
 			'./extension/entropy_table_cuda.cu',
 			'./extension/scale_cuda.cu',
 			'./extension/imp2mask_cuda.cu',
+			'./extension/CPP_cuda.cu',
+            './extension/viewport_cuda.cu',
         ],
         include_dirs=['./extension'], 
         extra_compile_args={'cxx': cxx_args, 'nvcc': nvcc_args}, 
