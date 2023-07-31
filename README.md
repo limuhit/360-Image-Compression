@@ -1,6 +1,12 @@
 # LIC360
 End-to-end optimized 360-degree image compression
 
+Dataset:
+- We collect a dataset of 19,790 ERP images with a size of 512x1024 from Flickr for training and testing. The dataset is available in 
+https://github.com/limuhit/360-Image-Compression/blob/main/README.md
+- We further provide a larger test set with a size of 1024x2048 in https://github.com/limuhit/360-Image-Compression/blob/main/test/performance_1024_2048.md
+- We denoted the main dataset for training and testing as LIC360 and the large test set LIC3602K.
+
 Requirmed packages:
 - pytorch
 - cv2 (python-opencv)
