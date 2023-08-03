@@ -1,5 +1,5 @@
 # LIC360
-End-to-end optimized 360-degree image compression
+Dateset and codes of "End-to-end optimized 360-degree image compression"
 
 Dataset:
 - We collect a dataset of 19,790 ERP images with a size of 512x1024 from Flickr for training and testing. The dataset is available in 
@@ -27,3 +27,13 @@ Running the codec for 360-degree images:
  	* python ./test/lic360_demo.py --test --img-file source_image_names.txt --code-file code_names.txt --model-idx 3 --ssim
  	* python ./test/lic360_demo.py --test --img-list a.png b.png --code-list code_a code_b --model-idx 3 --ssim
  	* python ./test/lic360_demo.py --test --img-list a.png b.png --code-list code_a code_b --model-idx 3 --ssim
+
+@article{li2022end,  
+&emsp; title={End-to-End Optimized 360° Image Compression},    
+&emsp;  author={Li, Mu and Li, Jinxing and Gu, Shuhang and Wu, Feng and Zhang, David},    
+&emsp;  journal={IEEE Transactions on Image Processing},
+&emsp;  volume={31},  
+&emsp;  pages={6267--6281},  
+&emsp;  year={2022},  
+&emsp;  publisher={IEEE}  
+}
