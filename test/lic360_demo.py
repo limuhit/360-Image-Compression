@@ -322,8 +322,8 @@ def cast_imp_entropy_parameter(pdict,ndict):
     return ndict
 
 def check_models():
-    assert(os.path.exists('{}/{}_encoder.pt'.format(mse_model_dir,model_mse_list[0]))),'Please make sure the pretrained models for VMSE exists in the mse_model_dir'
-    assert(os.path.exists('{}/{}_encoder.pt'.format(ssim_model_dir,model_ssim_list[0]))),'Please make sure the pretrained models for VSSIM exists in the ssim_model_dir'
+    assert(os.path.exists('{}/{}_v0_best_0.pt'.format(mse_model_dir,model_mse_list[0]))),'Please make sure the pretrained models for VMSE exists in the mse_model_dir'
+    assert(os.path.exists('{}/{}_v0_best_0.pt'.format(ssim_model_dir,model_ssim_list[0]))),'Please make sure the pretrained models for VSSIM exists in the ssim_model_dir'
 
 def read_list(fname):
     with open(fname) as f:
