@@ -18,7 +18,7 @@ class MULTI_PROJECT_AF(torch.autograd.Function):
         gid = grad_output.device.index
         outputs = ctx.op[gid].backward(grad_output)
         #/(outputs[1]+0.000001)
-        return outputs[0]/(outputs[1]+0.000001), None
+        return outputs[0], None
     
 
 class MultiProject(BaseOpModule):
